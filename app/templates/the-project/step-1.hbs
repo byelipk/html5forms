@@ -1,8 +1,8 @@
 <div class="card">
-  <form class="card-block" {{action "next" on="submit"}}>
+  <form class="card-block form" {{action "next" on="submit"}}>
     <fieldset>
-      <legend>Step 1</legend>
-      <span>Create Your Account</span>
+      <legend class="display-4 text-xs-center text-muted">Step 1</legend>
+      <p class="lead text-xs-center">Create Your Account</p>
     </fieldset>
     <fieldset class="form-group">
       <label for="name">Name</label>
@@ -16,6 +16,8 @@
       <label for="password">Password</label>
       <input type="password" class="form-control" id="password">
     </fieldset>
-    <button type="submit" class="btn btn-primary btn-block">Next Step</button>
+    <fieldset class="form-group m-t-3">
+      <button type="submit" class="btn btn-block btn-lg">Next Step</button>
+    </fieldset>
   </form>
 </div>

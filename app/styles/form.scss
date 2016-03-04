@@ -1,3 +1,6 @@
+$green: #26d293;
+$amount: 30%;
+
 * {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -8,7 +11,7 @@ body {
 
 ul.form-steps {
   li {
-    width: 32%;
+    width: 30%;
     text-align: center;
     color: #333;
     cursor: pointer;
@@ -28,6 +31,36 @@ ul.form-steps {
     }
   }
 }
+
+.form {
+  fieldset {
+    legend.display-4 {
+      font-size: 1.5em;
+    }
+    p.lead {
+      font-size: 2em;
+    }
+  }
+  .btn {
+    color: #fff;
+    background-color: $green;
+    border: $green;
+    border-bottom: 3px solid darken($green, 7%);
+    &:hover {
+      background-color: darken($green, 3%);
+      border: darken($green, 5%);
+      border-bottom: 3px solid darken($green, 7%);
+    }
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      outline: none;
+      background-color: darken($green, 5%);
+    }
+  }
+}
+
 
 #step-1:before { content: "1"; }
 #step-2:before { content: "2"; }
