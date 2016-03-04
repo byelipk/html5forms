@@ -1,0 +1,18 @@
+<form {{action "save" on="submit"}}>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <fieldset class="form-group">
+        <label for="ex">What software do you know?</label>
+        <datalist id="software">
+          <option value="Tableau"><b>Tableau</b></option>
+          <option value="R">R</option>
+          <option value="Ruby">Ruby</option>
+          <option value="Rails">Rails</option>
+          <option value="Ember">Ember</option>
+        </datalist>
+        <input type="text" class="form-control" id="ex" list="software" autofocus required>
+      </fieldset>
+      <button type="submit" class="btn btn-primary btn-responsive">Submit</button>
+    </div>
+  </div>
+</form>

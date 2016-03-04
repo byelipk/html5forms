@@ -1,0 +1,13 @@
+@import 'bootstrap';
+
+// @include media-breakpoint-down(xs) { }
+
+@include media-breakpoint-down(sm) {
+  .btn-responsive {
+    width: 100%;
+  }
+}
+
+// @include media-breakpoint-down(md) { }
+// @include media-breakpoint-down(lg) { }
+// @include media-breakpoint-down(xl) { }
