@@ -1,0 +1,21 @@
+<div class="card">
+  <form class="card-block" {{action "next" on="submit"}}>
+    <fieldset>
+      <legend>Step 1</legend>
+      <span>Create Your Account</span>
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name">
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email">
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password">
+    </fieldset>
+    <button type="submit" class="btn btn-primary btn-block">Next Step</button>
+  </form>
+</div>
