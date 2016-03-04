@@ -1,16 +1,10 @@
 <div class="the-project">
   <h3 class="m-t-3 m-b-3">The Project</h3>
 
-  <ul class="list-inline">
-    <li class="list-inline-item">
-      {{#link-to "the-project.step-1"}}Account{{/link-to}}
-    </li>
-    <li class="list-inline-item">
-      {{#link-to "the-project.step-2"}}Details{{/link-to}}
-    </li>
-    <li class="list-inline-item">
-      {{#link-to "the-project.step-3"}}Confirm{{/link-to}}
-    </li>
+  <ul class="list-inline form-steps">
+    {{#link-to "the-project.step-1" tagName="li" id="step-1" class="list-inline-item"}}Account{{/link-to}}
+    {{#link-to "the-project.step-2" tagName="li" id="step-2" class="list-inline-item"}}Details{{/link-to}}
+    {{#link-to "the-project.step-3" tagName="li" id="step-3" class="list-inline-item"}}Confirm{{/link-to}}
   </ul>
 
   {{outlet}}

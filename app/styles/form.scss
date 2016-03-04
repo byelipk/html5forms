@@ -1,0 +1,34 @@
+* {
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: url("/assets/images/ignasi_pattern_s.png");
+}
+
+ul.form-steps {
+  li {
+    width: 32%;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    &:before {
+      text-align: center;
+      border: 3px solid #333;
+      height: 40px;
+      border-radius: 75px;
+      width: 40px;
+      display: block;
+      margin: 5px auto;
+      font-size: 1.2em;
+    }
+    &.active:before {
+      background: #333;
+      color: #fff;
+    }
+  }
+}
+
+#step-1:before { content: "1"; }
+#step-2:before { content: "2"; }
+#step-3::before { content: "3"; }
