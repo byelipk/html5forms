@@ -22,7 +22,16 @@
 
     <fieldset class="form-group">
       <label for="country">Country</label>
-      <input type="text" class="form-control" id="country">
+      {{#power-select
+        options=names
+        searchEnabled=false
+        selected=user
+        onchange=(action (mut user))
+        as |name|
+      }}
+        {{name}}
+      {{/power-select}}
+      {{!-- <input type="text" class="form-control" id="country"> --}}
     </fieldset>
 
     <div class="checkbox">
