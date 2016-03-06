@@ -1,14 +1,3 @@
-$green: #26d293;
-$amount: 30%;
-
-* {
-  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-body {
-  background: url("/assets/images/ignasi_pattern_s.png");
-}
-
 ul.form-steps {
   li {
     width: 30%;
@@ -62,6 +51,6 @@ ul.form-steps {
 }
 
 
-#step-1:before { content: "1"; }
-#step-2:before { content: "2"; }
+#step-1:before  { content: "1"; }
+#step-2:before  { content: "2"; }
 #step-3::before { content: "3"; }
