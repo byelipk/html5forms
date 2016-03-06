@@ -3,3 +3,19 @@
     width: 100%;
   }
 }
+
+.btn-success-2 {
+  color: #fff;
+  background-color: $green;
+  border: $green;
+  border-bottom: 3px solid darken($green, 7%);
+  outline: none !important;
+  &:hover {
+    background-color: darken($green, 3%);
+    border: darken($green, 5%);
+    border-bottom: 3px solid darken($green, 7%);
+  }
+  &:active {
+    background-color: darken($green, 5%);
+  }
+}

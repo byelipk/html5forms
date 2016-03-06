@@ -30,24 +30,6 @@ ul.form-steps {
       font-size: 2em;
     }
   }
-  .btn {
-    color: #fff;
-    background-color: $green;
-    border: $green;
-    border-bottom: 3px solid darken($green, 7%);
-    &:hover {
-      background-color: darken($green, 3%);
-      border: darken($green, 5%);
-      border-bottom: 3px solid darken($green, 7%);
-    }
-    &:focus {
-      outline: none;
-    }
-    &:active {
-      outline: none;
-      background-color: darken($green, 5%);
-    }
-  }
 }
 
 
