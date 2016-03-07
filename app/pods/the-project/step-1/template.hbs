@@ -1,13 +1,18 @@
-<div class="card">
+<div class="card z-depth-1">
   <form class="card-block form" {{action "next" model on="submit"}}>
     <fieldset>
       <legend class="display-4 text-xs-center text-muted">Step 1</legend>
       <p class="lead text-xs-center">Create Your Account</p>
     </fieldset>
 
-    <fieldset class="form-group">
+    <fieldset class="form-group has-danger">
       <label for="name">Name</label>
-      {{input type="text" value=model.name class="form-control" id="name" placeholder="Your full name"}}
+      {{!-- {{#if (v-get model 'name' 'isInvalid')}}
+        <div class="alert alert-danger" role="alert">
+          {{v-get model 'name' 'message'}}
+        </div>
+      {{/if}} --}}
+      {{input type="text" value=model.name class="form-control form-control-danger" id="name" placeholder="Your full name" autocomplete="off"}}
     </fieldset>
 
     <fieldset class="form-group">
